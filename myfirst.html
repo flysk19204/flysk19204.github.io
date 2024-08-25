@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>苹果风格页面</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="https://images.unsplash.com/photo-1509021436665-8f07dbf5bf1d" alt="Apple Style Image">
+            <h1>望穿秋月</h1>
+            <p>这是我的第一段文本，我来教大家开发一个很破的网站。里面会用到HTML, CSS, JAVASCRIPT等技术，希望大家能够学到新知识。</p>
+            <div id="counter-display">当前计数: 0</div>
+            <button id="counter-button">点击计数</button>
+        </div>
+
+        <div class="right-section">
+            <h2>一个小标题</h2>
+            <p>右边的第一段文本，测试文本。</p>
+        </div>
+    </div>
+
+    <script>
+        let count = 0;
+
+        document.getElementById('counter-button').addEventListener('click', function() {
+            count++;
+            document.getElementById('counter-display').textContent = '当前计数: ' + count;
+        });
+    </script>
+</body>
+</html>
